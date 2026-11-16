@@ -456,11 +456,13 @@
   }
 
   footer a {
+    display: inline-block;
     color: var(--ink);
     text-decoration: none;
     font-family: var(--font-mono);
     border-bottom: 1px solid var(--hairline);
-    padding: 10px 0;
+    /* the whole link clears the 44px tap target, not just its text */
+    padding: 13px 0;
   }
 
   footer a:hover { color: var(--accent-text); border-color: var(--accent-text); }
